@@ -29,6 +29,7 @@ nav {
     border-radius: 10px;
     border: none;
     font-size: 15px;
+    cursor: pointer;
 }
 
 header {
@@ -66,6 +67,7 @@ header p {
     background-color: #1D4ED8;
     color: white;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 
@@ -305,4 +307,80 @@ header p {
 .footer-socials svg {
     width: 18px;
     height: 18px;
+}
+
+
+.faq {
+    padding: 80px 20px;
+    background: #f8f9fc;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.faq h2 {
+    font-size: 42px;
+    text-align: center;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #6b7280;
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+details {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px 25px;
+    border: 1px solid #e5e7eb;
+    transition: .3s;
+}
+
+details:hover {
+    box-shadow: 0 5px 18px rgba(0, 0, 0, .08);
+}
+
+summary {
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    padding-right: 30px;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    font-size: 24px;
+    color: #2563eb;
+    transition: .3s;
+}
+
+details[open] summary::after {
+    content: "−";
+}
+
+details p {
+    margin-top: 15px;
+    line-height: 1.7;
+    color: #4b5563;
 }
